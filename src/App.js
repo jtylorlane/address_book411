@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
-import IndividualUser from "./IndividualUser";
+import IndividualUser from "./Components/IndividualUser";
 
 function App() {
   const [randomUsers, setUsers] = useState([]);
@@ -16,7 +16,7 @@ function App() {
     <div className="App">
       <ul>
         {randomUsers.map((user, index) => (
-          <IndividualUser person={user} key={index} i={index}/>
+          <IndividualUser person={user} key={index} i={index} />
         ))}
       </ul>
     </div>
